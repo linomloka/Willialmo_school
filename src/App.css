@@ -102,6 +102,7 @@ button.primary {
     margin-right: 0px;
     min-width: 410px;
     max-width: 560px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 .min_section1_div2 {
@@ -116,6 +117,7 @@ button.primary {
     margin-right: auto;
     min-width: 410px;
     max-width: 560px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 .min_section2 {
@@ -138,6 +140,7 @@ button.primary {
     min-width: 410px;
     max-width: 560px;
     border-radius: 7px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 .min_section2_div2 {
@@ -152,6 +155,7 @@ button.primary {
     margin-right: auto;
     min-width: 410px;
     max-width: 560px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 .min_section_buttons {
@@ -160,7 +164,11 @@ button.primary {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 7px 15px;
+}
+.min_section_buttons:hover {
+    background-color: hsl(226, 100%, 40%);
+    cursor: pointer;
 }
 
 

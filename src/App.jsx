@@ -12,7 +12,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
     return(
       <>
         <HomePage />
-        <Footer />
+        <Footer />        
       </>
     );
   }
@@ -22,7 +22,7 @@ function App() {
   return (
       <BrowserRouter>
         <Navbar />
-        <Routes>
+        <Routes>          
           <Route path='/' element={<Home />} />
           <Route path='/register' element={<RegisterPage />} />
         </Routes>  

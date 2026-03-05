@@ -1,0 +1,66 @@
+
+.form_container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f8;
+    text-align: center;
+}
+.register_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 480px;
+    height: auto;
+    max-width: 50%;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 70%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.register_form input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.register_form input:focus {
+    outline: none;
+    border-color: hsl(212, 72%, 30%);
+}
+
+.form_buttons {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin-left: auto;
+}
+
+.register_button {
+    background-color: hsl(93, 94%, 40%);
+    padding: 9px 15px;
+    border: none;
+    border-radius: 10px;
+}
+.register_button:hover {
+    cursor: pointer;
+    background-color: hsl(93, 94%, 37%);
+}
+
+.cancel_button {
+    background-color: white;
+    color: black;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 10px;
+}
+.cancel_button:hover {
+    cursor: pointer;
+    background-color: white;
+}

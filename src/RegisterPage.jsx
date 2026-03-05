@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import styles from './css files/RegisterPage.module.css'
+import { Link } from 'react-router-dom';
 
 function RegisterPage() {
 
@@ -9,6 +11,8 @@ function RegisterPage() {
         confirmPassword: ""
     })
 
+    const [error, setError] = useState("")
+
     const handleForm = (e) => {
         setFormData({...formData, 
                      [e.target.name]:e.target.value,});
@@ -17,13 +21,26 @@ function RegisterPage() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData);
+        if (formData.password !== formData.confirmPassword){
+            setError("Put same passwords!")
+        return;
+        }
+            setError("");
+        if (formData.password.length < 7) {
+            setError("Password must be greater than 7 characters");
+            return;
+        }
+            alert("Form submitted successfully!");
     };
+
+    
 
     return(
 
-        <div>
+        <div className={styles.form_container}>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className={`${styles.register_form}`}>
+                <h2>Register Here</h2>
                 <input type="text" 
                        name='name'
                        onChange={ handleForm }
@@ -55,7 +72,12 @@ function RegisterPage() {
                        placeholder="Confirm your password"
                        required
                 />
-                <button type='submit'>Register</button>
+                {formData.confirmPassword && formData.password !== formData.confirmPassword && 
+                        ( <p style={{color:"red"}}>Passwords do not match!</p>)}
+                <div className={styles.form_buttons}>
+                    <button type='submit' className={styles.register_button}>Submit</button>
+                    <Link to='/'><button className={styles.cancel_button}>Cancel</button></Link>
+                </div>                
             </form>
         </div>
     );
