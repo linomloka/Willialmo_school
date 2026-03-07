@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import styles from './css files/RegisterPage.module.css'
+import styles from './css files/LogInPage.module.css'
 import { Link } from 'react-router-dom';
 
-function RegisterPage() {
+function LogInPage() {
 
     const [ formData, setFormData ] = useState({
         name: "",
@@ -15,7 +15,7 @@ function RegisterPage() {
 
     const handleForm = (e) => {
         setFormData({...formData, 
-                     [e.target.name]:e.target.value,});
+                     [e.target.name]:e.target.value,}); 
     }
 
     const handleSubmit = (e) => {
@@ -38,9 +38,9 @@ function RegisterPage() {
     return(
 
         <div className={styles.form_container}>
-
+            <title>Login Page</title>
             <form onSubmit={handleSubmit} className={`${styles.register_form}`}>
-                <h2>Register Here</h2>
+                <h2>Log In</h2>
                 <input type="text" 
                        name='name'
                        onChange={ handleForm }
@@ -84,4 +84,4 @@ function RegisterPage() {
 }
 
 // QUIZ: Put CSS styles to the form, put if statements.//
-export default RegisterPage;
+export default LogInPage;

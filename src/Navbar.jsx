@@ -9,10 +9,10 @@ function Navbar() {
                 </Link>
 
                 <div className="navbar_buttons">
-                    <Link to="/register">
-                        <button type="button">Register</button>
+                    <Link to="/logIn">
+                        <button type="button">Log In</button>
                     </Link>
-                    <Link to="/signup">
+                    <Link to="/signUp">
                         <button type="button">Sign Up</button>
                     </Link>
                 </div>

@@ -24,21 +24,21 @@ h1 {
 .navbar_buttons {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     border-radius: 5px;
     transform: translateY(-3px);
     transition: all 0.3s ease;
 }
 
 button {
-    padding: 7px 10px ;
+    padding: 10px 10px ;
     border-radius: 5px;
     background-color: #E1A866;
     border: none;
 }
 
 button:hover {
-    background-color: #808080;
+    background-color: hsl(32, 67%, 60%);
 }
 
 button.primary {
