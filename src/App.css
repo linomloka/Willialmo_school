@@ -53,6 +53,12 @@ button.primary {
     background-color: hsl(0, 0%, 83%);
 }
 
+.language_button {
+    background: linear-gradient(135deg, #1d6d9e, #0000ff);
+    padding: 10px 17px;
+    border-radius: 14px;
+}
+
 
                  /*-------------- BODY SECTION ---------------*/
 
