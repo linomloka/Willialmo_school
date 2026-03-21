@@ -8,11 +8,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
  
 
-  const Home = () => {
+  const Home = ({language}) => {
   
     return(
       <>
-        <HomePage />
+        <HomePage language={language}/>
         <Footer />        
       </>
     );
@@ -22,12 +22,11 @@ function App() {
 
       const[language, setLanguage] = useState("EN");
 
-
   return (
       <BrowserRouter>
         <Navbar language={language} setLanguage={setLanguage}/>
         <Routes>          
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home language={language}/>} />
           <Route path='/logIn' element={<LogInPage />} />
           <Route path='/signUp' element={<SignUp />} />
         </Routes>  

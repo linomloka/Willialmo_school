@@ -1,41 +1,57 @@
 
-function HomePage() {
+function HomePage({language}) {
     return (
         <section className="section">
             <div className="section_head">
-                <h1>Welcome! <span className="school_head">WILLIALMO SCHOOL</span></h1>
-                <h2>This is where talents and innovations meet conducive environment and advanced technology</h2>
+                <h1>
+                    {language === "EN" ? "Welcome!" : "Karibu!"} <span className="school_head">{language === "EN" ? "WILLIALMO SCHOOL" : "WILLIALMO SCHOOL"}</span>
+                </h1>
+                <h2>{language === "EN" ? "This is where talents and innovations meet conducive environment and advanced technology" :
+                                         "Mahali ambapo vipaji na bunifu zinakutana na mazingira mazuri na teknolojia bora."}
+                </h2>
             </div>
 
             <div className="min_section">
                 <div className="min_section1">
                     <div className="min_section1_div1">
-                        <h2>Good working environment</h2>
-                        <p>Large classrooms available with enough space to ensure comfort, concentration, and effective learning for all students.</p>
-                        <button className="min_section_buttons">Learn More</button>
+                        <h2>{language === "EN" ? "Good working environment" :
+                                                 "Mazingira bora"}
+                        </h2>
+                        <p>{language === "EN" ? "Large classrooms available with enough space to ensure comfort, concentration, and effective learning for all students." :
+                                                "Madarasa makubwa yenye nafasi ya kutosha kuleta utulivu, umakini na ujifunzaji bora kwa wanafunzi wote."}
+                        </p>
+                        <button className="min_section_buttons">{language === "EN" ? "Learn More" : "Jua zaidi"}</button>
                     </div>
+
                     <div className="min_section1_div2">
-                        <h2>Best teachers</h2>
-                        <p>Specialists in transferring knowledge through clear teaching methods and practical understanding through practical sessions.</p>
-                        <button className="min_section_buttons">Learn More</button>
+                        <h2>{language === "EN" ? "Best teachers" : "Walimu bora"}</h2>
+                        <p>{language === "EN" ? "Specialists in transfering knowledge through clear teaching methods and increase understanding through practical sessions." :
+                                                "Wabobezi katika kutoa maarifa kupitia njia rahisi za ufundishaji na kuongeza uelewa kupitia vipindi vya matendo."}
+                        </p>
+                        <button className="min_section_buttons">{language === "EN" ? "Learn More" : "Jua zaidi"}</button>
                     </div>
                 </div>
 
                 <div className="min_section2">
                     <div className="min_section2_div1">
-                        <h2>Sports</h2>
-                        <p>Discovering talents of our students in every aspects and develop them to enhance good teamwork and better health, make them enjoy playing.</p>
-                        <button className="min_section_buttons">Learn More</button>
+                        <h2>{language === "EN" ? "Sports" : "Michezo"}</h2>
+                        <p>{language === "EN" ? "Discovering talents of our students in every aspects and develop them, to enhance good teamwork and better health so as to make them enjoy playing." :
+                                                "Ugunduzi wa vipaji vya watoto wetu kwenye kila nyanja na kuwaboresha, kuimarisha umoja na afya ili kuwafanya kufurahia kucheza."}
+                        </p>
+                        <button className="min_section_buttons">{language === "EN" ? "Learn More" : "Jua zaidi"}</button>
                     </div>
+
                     <div className="min_section2_div2">
-                        <h2>Advanced technology</h2>
-                        <p>Inspires studets to change the world by acquiring knowledge and inspire them to think out of the box and be a game changers of nowadays.</p>
-                        <button className="min_section_buttons">Learn More</button>
+                        <h2>{language === "EN" ? "Advanced technology" : "Teknolojia bora"}</h2>
+                        <p>{language === "EN" ? "Inspires studets to change the world by acquiring knowledge as well as help them to think out of the box and be a game changers of nowadays." :
+                                                "Kuhimiza wanafunzi kubadili dunia kwa kupata maarifa vilevile kuwasaidia kufikiri vitu vipya na kuwa wagunduzi wa siku za leo."}
+                        </p>
+                        <button className="min_section_buttons">{language === "EN" ? "Learn More" : "Jua zaidi"}</button>
                     </div>
                 </div>
 
             </div>
         </section>
-    );
+    )
 }
 export default HomePage 
