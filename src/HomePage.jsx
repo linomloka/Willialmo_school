@@ -10,14 +10,13 @@ function HomePage() {
             <div className="min_section">
                 <div className="min_section1">
                     <div className="min_section1_div1">
-
                         <h2>Good working environment</h2>
                         <p>Large classrooms available with enough space to ensure comfort, concentration, and effective learning for all students.</p>
                         <button className="min_section_buttons">Learn More</button>
                     </div>
                     <div className="min_section1_div2">
                         <h2>Best teachers</h2>
-                        <p>Specialists in transferring knowledge through clear teaching methods and practical understanding.</p>
+                        <p>Specialists in transferring knowledge through clear teaching methods and practical understanding through practical sessions.</p>
                         <button className="min_section_buttons">Learn More</button>
                     </div>
                 </div>
@@ -25,7 +24,7 @@ function HomePage() {
                 <div className="min_section2">
                     <div className="min_section2_div1">
                         <h2>Sports</h2>
-                        <p>Discovering talents of our studens in every aspects and develop to enhance good teamwork and good health.</p>
+                        <p>Discovering talents of our students in every aspects and develop them to enhance good teamwork and better health, make them enjoy playing.</p>
                         <button className="min_section_buttons">Learn More</button>
                     </div>
                     <div className="min_section2_div2">

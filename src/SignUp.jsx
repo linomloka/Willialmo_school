@@ -21,11 +21,12 @@ function SignUp() {
     };
         setSignFormData(updatedData);
       if( updatedData.confirmPassword && updatedData.password !== updatedData.confirmPassword) {
-            setError("Make sure passwors match!")
+            setError("Make sure passwords match!")
         }
       else{
             setError("");
         };
+        
       if( updatedData.password.length < 7) {
         setPassword("Password must be at least 7 characters!");
         }
@@ -81,7 +82,7 @@ function SignUp() {
                             disabled={
                             !signFormData.name ||
                             !signFormData.email ||
-                            !signFormData.password}> Sign Up
+                            !signFormData.password}> <h2>Sign Up</h2>
                     </button> 
                 </div>
                 <p>Already have an account? <Link to='/logIn'> Log In </Link> </p>

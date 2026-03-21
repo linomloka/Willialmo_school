@@ -9,11 +9,11 @@ function Navbar() {
                 </Link>
 
                 <div className="navbar_buttons">
-                    <Link to="/logIn">
-                        <button type="button">Log In</button>
+                    <Link to="/logIn" >
+                        <button type="button" className="logIn_button">Log In</button>
                     </Link>
-                    <Link to="/signUp">
-                        <button type="button">Sign Up</button>
+                    <Link to="/signUp" >
+                        <button type="button" className="signUp_button">Sign Up</button>
                     </Link>
                 </div>
             </div>

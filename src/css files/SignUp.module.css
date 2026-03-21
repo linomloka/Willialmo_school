@@ -43,7 +43,9 @@
     width: 100%;
     border: none;
     border-radius: 10px;
+    color: black;
 }
+
 .signForm_buttons:hover {
     cursor: pointer;
     background-color: hsl(93, 94%, 35%);

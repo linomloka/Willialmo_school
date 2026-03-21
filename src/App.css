@@ -12,7 +12,6 @@ h1 {
                  /*-------------- HEADER SECTION ---------------*/
 .navbar {
     margin: 10px;
-    background-color: #2E3B17;
     padding: 20px;
     border-radius: 7px;
     display: flex;
@@ -25,25 +24,28 @@ h1 {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    border-radius: 5px;
     transform: translateY(-3px);
     transition: all 0.3s ease;
 }
 
 button {
-    padding: 10px 10px ;
-    border-radius: 5px;
-    background-color: #E1A866;
+    padding: 12px 20px;
+    border-radius: 7px;
     border: none;
-}
-
-button:hover {
-    background-color: hsl(32, 67%, 60%);
 }
 
 button.primary {
   background-color: #BF6A23;
   color: white;
+}
+
+.logIn_button {
+    background-color: #1d6d9e;
+
+}
+
+.signUp_button {
+    background-color: white;
 }
 
 
@@ -55,8 +57,7 @@ button.primary {
 }
 .school_head {
     color: #1d6d9e;
-    font-weight: 700px;
-    font-weight: 700;
+    font-weight: 900;
 }
 .section_head {
     display: flex;
