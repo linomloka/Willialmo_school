@@ -1,0 +1,83 @@
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.signIn {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f8;
+    text-align: center;
+}
+
+.signIn_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 480px;
+    height: auto;
+    max-width: 50%;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    background-color: hsl(0, 17%, 93%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.signIn_form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signIn_form input:focus {
+    outline: none;
+    border-color: hsl(212, 72%, 30%);
+}
+
+.signForm_buttons {
+    background-color: hsl(93, 94%, 40%);
+    padding: 9px 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: black;
+}
+
+.signForm_buttons:hover {
+    cursor: pointer;
+    background-color: hsl(93, 94%, 35%);
+}
