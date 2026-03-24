@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans", sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 64px;
+}
+
+                 /*-------------- HEADER SECTION ---------------*/
+.navbar {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.navbar_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 7px;
+    border: none;
+}
+
+button.primary {
+  background-color: #BF6A23;
+  color: white;
+}
+
+.logIn_button {
+    background-color: #1d6d9e;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.signUp_button:hover {
+    background-color: hsl(0, 0%, 85%);
+    cursor: pointer;
+    border-radius: 15px;
+}
+.signUp_button:hover {
+    background-color: hsl(0, 0%, 83%);
+}
+
+.language_button {
+    background: linear-gradient(135deg, #1d6d9e, #0000ff);
+    padding: 10px 17px;
+    border-radius: 14px;
+}
+
+
+                 /*-------------- BODY SECTION ---------------*/
+
+.section {
+    padding: 4rem 1rem;
+    background-color: #FFFBE6;
+}
+.school_head {
+    color: #1d6d9e;
+    font-weight: 900;
+}
+.section_head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2px;
+    background-color:  #FFFBE6;
+    max-width: 1100px; /* content width limit */
+    margin: 0px auto 10px auto; 
+    padding: 20px;
+    border-radius: 13px;
+}
+
+                 /*-------------- nav_buttons ---------------*/
+
+
+
+                 /*-------------- MIN SECTIONS ---------------*/
+.min_section {
+    display: grid;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.min_section1 {
+    display: flex;
+    gap: 20px;
+    max-width: 1150px;
+    padding: 0px 25px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.min_section1_div1 {
+    display: grid;
+    text-align: center;
+    border: 1px solid rgb(29, 238, 151);
+    border-radius: 7px;
+    padding: 30px;
+    height: 150px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: 0px;
+    min-width: 410px;
+    max-width: 560px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.min_section1_div2 {
+    display: grid;
+    text-align: center;
+    border: 1px solid rgb(29, 238, 151);
+    border-radius: 7px;
+    padding: 30px;
+    height: 150px;
+    width: 200px;
+    margin-left: 0px;
+    margin-right: auto;
+    min-width: 410px;
+    max-width: 560px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.min_section2 {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    max-width: 1150px;
+    padding: 0px 25px;
+}
+
+.min_section2_div1 {
+    display: grid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0px;
+    border: 1px solid rgb(29, 238, 151);
+    padding: 30px;
+    height: 150px;
+    width: 200px;
+    min-width: 410px;
+    max-width: 560px;
+    border-radius: 7px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.min_section2_div2 {
+    display: grid;
+    text-align: center;
+    border: 1px solid rgb(29, 238, 151);
+    border-radius: 7px;
+    padding: 30px;
+    height: 150px;
+    width: 200px;
+    margin-left: 0px;
+    margin-right: auto;
+    min-width: 410px;
+    max-width: 560px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.min_section_buttons {
+    text-align: center;
+    background-color: rgb(0, 60, 255);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 17px;
+    padding: 7px 15px;
+}
+.min_section_buttons:hover {
+    background-color: hsl(226, 100%, 40%);
+    cursor: pointer;
+}
+
+
+.footer_details {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
