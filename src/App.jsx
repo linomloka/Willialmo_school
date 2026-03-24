@@ -21,14 +21,19 @@ import { useState } from 'react'
 function App() {
 
       const[language, setLanguage] = useState("EN");
+      const [showSignUp, setShowSignUp] = useState(false);
 
   return (
       <BrowserRouter>
-        <Navbar language={language} setLanguage={setLanguage}/>
+        <Navbar language={language} setLanguage={setLanguage} setShowSignUp={setShowSignUp}/>
+        <SignUp 
+          language={language} 
+          show={showSignUp} 
+          onClose={() => setShowSignUp(false)} 
+        />
         <Routes>          
           <Route path='/' element={<Home language={language}/>} />
-          <Route path='/logIn' element={<LogInPage />} />
-          <Route path='/signUp' element={<SignUp />} />
+          <Route path='/logIn' element={<LogInPage language={language} />} />
         </Routes>  
       </BrowserRouter>
   )

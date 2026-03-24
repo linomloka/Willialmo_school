@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar({language, setLanguage}) {
+function Navbar({language, setLanguage, setShowSignUp}) {
 
     const languageChanger = () => setLanguage(language === "EN" ? "SW" : "EN");
 
@@ -17,9 +18,11 @@ function Navbar({language, setLanguage}) {
                     <Link to="/logIn" >
                         <button type="button" className="logIn_button">Log In</button>
                     </Link>
-                    <Link to="/signUp" >
-                        <button type="button" className="signUp_button">Sign Up</button>
-                    </Link>
+
+                        <button type="button" className="signUp_button" onClick={() => setShowSignUp(true)}>
+                            Sign Up
+                        </button>
+
                     <button onClick={languageChanger} className="language_button">{language}</button>
                 </div>
             </div>
