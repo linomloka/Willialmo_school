@@ -10,17 +10,19 @@ function Navbar({language, setLanguage, setShowSignUp}) {
             <div className="navbar">
                 <Link to="/">
                     <h2 className="school_head">
-                        {language === "EN" ? "WILLIALMO SCHOOL" : "WILLIALMO SCHOOL"}
+                        {language === "EN" ? "WILLIALMO SCHOOL" : "SHULE YA WILLIALMO"}
                     </h2>
                 </Link>
 
                 <div className="navbar_buttons">
                     <Link to="/logIn" >
-                        <button type="button" className="logIn_button">Log In</button>
+                        <button type="button" className="logIn_button">
+                            {language === "EN" ? "Log In" : "Ingia"}
+                        </button>
                     </Link>
 
                         <button type="button" className="signUp_button" onClick={() => setShowSignUp(true)}>
-                            Sign Up
+                            {language === "EN" ? "Sign Up" : "Jiunge"}
                         </button>
 
                     <button onClick={languageChanger} className="language_button">{language}</button>

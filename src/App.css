@@ -183,9 +183,20 @@ button.primary {
     cursor: pointer;
 }
 
+                        /* ------------ SERVICES SECTION ------------- */
+.main_services_section {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 7rem;
+}
+.h2_services_section {
+    text-align: center;
+}
 
 .footer_details {
     display: flex;
     flex-direction: column;
     text-align: end;
 }
+

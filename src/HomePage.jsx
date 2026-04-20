@@ -50,6 +50,34 @@ function HomePage({language}) {
                     </div>
                 </div>
 
+                         {/*---------------- SERVICES & FEES SECTION ----------------- */}
+                <div className="main_services_section">
+                    <h2 className="h2_services_section">We receive students for: </h2>
+                    <div>
+                        <h2>Nursery education</h2>
+                        <p>Children with age of 6 months to 5 years.</p>
+                        <p>We also provide day care for little children, make the feel home and secured as well as improve their learning and social abilities.</p>
+                    </div>
+
+                    <div>
+                        <h2>Primary education</h2>
+                        <p>Children with age of 6 years.</p>
+                        <p>We provide quality primary education to students, considering their understanding, make them enjoy their studies as well as other school activities. </p>
+                    </div>
+
+                    <div>
+                        <h2>Secondary education</h2>
+                        <p>Children who have completed their primary education.</p>
+                        <p>We involve much practicals so as to enhance our students' understanding preparring for their advance or university education.</p>
+                    </div>
+
+                    <div>
+                        <h2>Advanced education</h2>
+                        <p>Children who have completed their secondary.</p>
+                        <p>We as best school, teach our students in best way as well as improve thier social skills, preparing for their future.</p>
+                    </div>
+
+                </div>
             </div>
         </section>
     )
