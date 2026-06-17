@@ -186,12 +186,84 @@ button.primary {
                         /* ------------ SERVICES SECTION ------------- */
 .main_services_section {
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     margin-top: 7rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 3rem;
+    margin: auto;
 }
 .h2_services_section {
     text-align: center;
+    margin-top: 7rem;
+}
+
+.services_sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    min-width: 560px;
+    max-width: 1150px;
+    text-align: center;
+}
+
+.services_section1 {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: auto;
+    border: none;
+    border-radius: 7px;
+    padding: 1.5rem;
+    border: 1px solid hsl(39, 100%, 70%);
+    box-shadow: 5px 5px hsl(39, 100%, 70%);
+                        /*---display section---*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.services_section2 {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: auto;
+    border: none;
+    border-radius: 7px;
+    padding: 1.5rem;
+    border: 1px solid hsl(39, 100%, 70%);
+    box-shadow: 5px 5px hsl(39, 100%, 70%);
+                        /*---display section---*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.services_section3 {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: auto;
+    border: none;
+    border-radius: 7px;
+    padding: 1.5rem;
+    border: 1px solid hsl(39, 100%, 70%);
+    box-shadow: 5px 5px hsl(39, 100%, 70%);
+                        /*---display section---*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.services_section4 {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: auto;
+    border: none;
+    border-radius: 7px;
+    padding: 1.5rem;
+    border: 1px solid hsl(39, 100%, 70%);
+    box-shadow: 5px 5px hsl(39, 100%, 70%);
+                        /*---display section---*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .footer_details {
