@@ -53,39 +53,90 @@ function HomePage({language}) {
                          {/*---------------- SERVICES & FEES SECTION ----------------- */}
                 <div className="main_services_section">
                     <div className="h2_services_section"> 
-                        <h2>We receive students for: </h2>
+                        <h2>
+                            {language === "EN" ? "We receive students for:" : 
+                                                 "Tunapokea wanafunzi kwa ajili: "
+                            } 
+                        </h2>
                     </div>
 
                     <div className="services_sections"> 
                         <div className="services_section1">
-                            <h2>Nursery education</h2>
+                            <h2>
+                                {language === "EN" ? "Nursery education" :
+                                                     "Elimu ya Awali"
+                                }
+                            </h2>
                             <div>
-                                <p>Children with age of 6 months to 5 years.</p>
-                                <p>We also provide day care for little children, make the feel home and secured as well as improve their learning and social abilities.</p>
+                                <p>
+                                    {language === "EN" ? "Children with age of 6 months to 5 years." :
+                                                         "Watoto wenye umri wa miezi 6 hadi miaka 5."
+                                    }
+                                </p>
+                                <p>
+                                    {language === "EN" ? "We provide day care for little children, make the feel home and secured as well as improve their learning and social abilities." :
+                                                         "Tunatoa malezi kwa watoto wadogo, kuwafanya wajihisi wapo nyumbani vilevile kuboresha uwezo wao wa kujifunza na kijamii."
+                                    }
+                                </p>
                             </div>
                         </div>
 
                         <div className="services_section2">
-                            <h2>Primary education</h2>
+                            <h2>
+                                {language === "EN" ? "Primary education" :
+                                                     "Elimu ya Msingi"
+                                }
+                            </h2>
                             <div>
-                                <p>Children with age of 6 years.</p>
-                                <p>We provide quality primary education to students, considering their understanding, make them enjoy their studies as well as other school activities. </p>
+                                <p>
+                                    {laguage === "EN" ? "Children with age of 6 years." :
+                                                        "Watoto wenye umri wa miaka 6."
+                                    }
+                                </p>
+                                <p>
+                                    {language === "EN" ? "We provide quality primary education to students, considering their understanding, make them enjoy their studies as well as other school activities." :
+                                                         "Tunatoa elimu bora ya msingi kwa wanafunzi, tukizingatia uelewa wao, kuwafanya wafurahie masomo yao na kazi nyingine shuleni."} 
+                                </p>
                             </div>
                         </div>
 
                         <div className="services_section3">
-                            <h2>Secondary education</h2>
+                            <h2>
+                                {language === "EN" ? "Secondary education" :
+                                                     "Elimu ya Sekondari"
+                                }
+                            </h2>
                             <div>
-                                <p>Children who have completed their primary education.</p>
-                                <p>We involve much practicals so as to enhance our students' understanding preparring for their advance or university education.</p>
+                                <p>
+                                    {language === "EN" ? "Students who have completed their primary education." :
+                                                         "Wanafunzi waliomaliza elimu ya msingi."
+                                    }
+                                </p>
+                                <p>
+                                    {language === "EN" ? "We involve much practicals so as to enhance our students' understanding preparing for their advance or university education." :
+                                                         "Tunajumuisha majaribio mengi ili kuboresha uelewa wa wanafunzi wetu na kuwaandaa kwa masomo ya elimu ya juu na chuo."
+                                    }
+                                </p>
                             </div>
                         </div>
 
                         <div className="services_section4">
-                            <h2>Advanced education</h2>
+                            <h2>
+                                {language === "EN" ? "Advanced education" :
+                                                     "Elimu ya juu"
+                                }
+                            </h2>
                             <div>
-                                <p>Children who have completed their secondary education.</p>
-                                <p>We as best school, teach our students in best way as well as improve thier social skills, preparing for their future.</p>
+                                <p>
+                                    {language === "EN" ? "Students who have completed their secondary education." :
+                                                         "Wanafunzi waliomaliza elimu ya sekondari."
+                                    }
+                                </p>
+                                <p>
+                                    {language === "EN" ? "We as best school, teach our students in best way as well as improve thier social skills, preparing for their future." :
+                                                         "Sisi kama shule bora, tunafundisha wanafunzi wetu kwenye njia bora vilevile kuongeza ujuzi wao wa kijamii, kuwaandaa kwa maisha yajayo."
+                                    }
+                                </p>
                             </div>
                         </div>
                     </div>
