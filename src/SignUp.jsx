@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './css files/SignUp.module.css'
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function SignUp({language, show, onClose}) {
 
@@ -115,5 +116,12 @@ function SignUp({language, show, onClose}) {
             </div>
         </div>
     );
+}
+
+SignUp.propTypes = {
+    language: PropTypes.string.isRequired,
+    show: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired
 };
+
 export default SignUp;

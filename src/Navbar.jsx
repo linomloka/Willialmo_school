@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 function Navbar({language, setLanguage, setShowSignUp}) {
 
@@ -31,5 +32,11 @@ function Navbar({language, setLanguage, setShowSignUp}) {
         </header>
     );
 }
+
+Navbar.propTypes = {
+    language: PropTypes.string.isRequired,
+    setLanguage: PropTypes.func.isRequired,
+    setShowSignUp: PropTypes.func.isRequired
+};
 
 export default Navbar;

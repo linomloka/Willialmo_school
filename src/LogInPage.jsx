@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './css files/LogInPage.module.css'
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function LogInPage({language}) {
 
@@ -72,6 +73,7 @@ function LogInPage({language}) {
                        placeholder={language === "EN" ? "Confirm your password" : "Thibitisha nenosiri lako"}
                        required
                 />
+                {error && ( <p style={{color:"red"}}>{error}</p>)}
                 {formData.confirmPassword && formData.password !== formData.confirmPassword && 
                         ( <p style={{color:"red"}}>{language === "EN" ? "Passwords do not match!" : "Manenosiri hayafanani!"}</p>)}
                 <div className={styles.form_buttons}>
@@ -83,5 +85,8 @@ function LogInPage({language}) {
     );
 }
 
-// QUIZ: Put CSS styles to the form, put if statements.//
+LogInPage.propTypes = {
+    language: PropTypes.string.isRequired
+};
+
 export default LogInPage;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 function HomePage({language}) {
     return (
@@ -89,7 +90,7 @@ function HomePage({language}) {
                             </h2>
                             <div>
                                 <p>
-                                    {laguage === "EN" ? "Children with age of 6 years." :
+                                    {language === "EN" ? "Children with age of 6 years." :
                                                         "Watoto wenye umri wa miaka 6."
                                     }
                                 </p>
@@ -146,4 +147,9 @@ function HomePage({language}) {
         </section>
     )
 }
+
+HomePage.propTypes = {
+    language: PropTypes.string.isRequired
+};
+
 export default HomePage 
