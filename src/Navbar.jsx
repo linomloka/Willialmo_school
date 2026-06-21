@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 function Navbar({language, setLanguage, setShowSignUp}) {
 
     const languageChanger = () => setLanguage(language === "EN" ? "SW" : "EN");
+    const [showMenu, setShowMenu] = useState(false);
 
     return (
         <header>
@@ -15,6 +16,34 @@ function Navbar({language, setLanguage, setShowSignUp}) {
                     </h2>
                 </Link>
 
+                <div className="navbar_center">
+                    <button 
+                        className="menu_toggle"
+                        onClick={() => setShowMenu(!showMenu)}
+                        title={language === "EN" ? "Menu" : "Menyu"}
+                    >
+                        ☰
+                    </button>
+
+                    <nav className={`navbar_nav ${showMenu ? 'active' : ''}`}>
+                        <Link to="/about" onClick={() => setShowMenu(false)}>
+                            <span>{language === "EN" ? "About" : "Kuhusu"}</span>
+                        </Link>
+                        <Link to="/curriculum" onClick={() => setShowMenu(false)}>
+                            <span>{language === "EN" ? "Curriculum" : "Mtaala"}</span>
+                        </Link>
+                        <Link to="/gallery" onClick={() => setShowMenu(false)}>
+                            <span>{language === "EN" ? "Gallery" : "Picha"}</span>
+                        </Link>
+                        <Link to="/fees-admission" onClick={() => setShowMenu(false)}>
+                            <span>{language === "EN" ? "Fees & Admission" : "Ada na Kuingizwa"}</span>
+                        </Link>
+                        <Link to="/contact" onClick={() => setShowMenu(false)}>
+                            <span>{language === "EN" ? "Contact" : "Wasiliana"}</span>
+                        </Link>
+                    </nav>
+                </div>
+
                 <div className="navbar_buttons">
                     <Link to="/logIn" >
                         <button type="button" className="logIn_button">
@@ -22,9 +51,9 @@ function Navbar({language, setLanguage, setShowSignUp}) {
                         </button>
                     </Link>
 
-                        <button type="button" className="signUp_button" onClick={() => setShowSignUp(true)}>
-                            {language === "EN" ? "Sign Up" : "Jiunge"}
-                        </button>
+                    <button type="button" className="signUp_button" onClick={() => setShowSignUp(true)}>
+                        {language === "EN" ? "Sign Up" : "Jiunge"}
+                    </button>
 
                     <button onClick={languageChanger} className="language_button">{language}</button>
                 </div>

@@ -1,0 +1,335 @@
+.contactSection {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #d4a574 0%, #99e5b8 100%);
+  min-height: calc(100vh - 120px);
+}
+
+.contactHeader {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactHeader h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.contactHeader p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactInfo h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.infoCard {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  height: 50px;
+  background: #f0f8ff;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+.infoContent h3 {
+  color: #2c3e50;
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+}
+
+.infoContent p {
+  color: #666;
+  margin: 4px 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.quickContact {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quickContact h3 {
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.quickContact a {
+  display: block;
+  padding: 12px;
+  margin: 10px 0;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.whatsappBtn {
+  background: #25d366 !important;
+}
+
+.whatsappBtn:hover {
+  background: #1fbf63 !important;
+  transform: scale(1.05);
+}
+
+.callBtn {
+  background: #e74c3c !important;
+}
+
+.callBtn:hover {
+  background: #c0392b !important;
+  transform: scale(1.05);
+}
+
+.contactForm {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.contactForm h2 {
+  margin: 0 0 25px 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.successMessage {
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.required {
+  color: #e74c3c;
+  margin-left: 3px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submitBtn:hover {
+  background: #2980b9;
+  transform: scale(1.02);
+}
+
+.mapSection {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mapSection h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 0 0 25px 0;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.mapPlaceholder {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mapPlaceholder iframe {
+  border-radius: 10px;
+}
+
+.faqSection {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faqSection h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 0 0 30px 0;
+  border-bottom: 3px solid #27ae60;
+  padding-bottom: 10px;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.faqCard {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #27ae60;
+}
+
+.faqCard h3 {
+  color: #2c3e50;
+  margin: 0 0 12px 0;
+  font-size: 1.05rem;
+}
+
+.faqCard p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .contactHeader h1 {
+    font-size: 2rem;
+  }
+
+  .contactContent {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .contactForm {
+    padding: 25px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .mapSection,
+  .faqSection {
+    padding: 25px;
+  }
+
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mapPlaceholder iframe {
+    height: 300px !important;
+  }
+}

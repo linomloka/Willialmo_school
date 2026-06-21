@@ -1,0 +1,173 @@
+.aboutSection {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: calc(100vh - 120px);
+}
+
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutHeader h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.aboutHeader p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.aboutContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.missionVision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.history,
+.leadership,
+.achievements,
+.location {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history h2,
+.leadership h2,
+.achievements h2,
+.location h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.history p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.leadershipGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.leaderCard {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  text-align: center;
+}
+
+.leaderCard h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.leaderName {
+  font-weight: 600;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.leaderCard p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.achievementsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.achievementsList li {
+  padding: 12px 0;
+  color: #555;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.achievementsList li:last-child {
+  border-bottom: none;
+}
+
+.address,
+.contact {
+  margin-top: 15px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .aboutHeader h1 {
+    font-size: 2rem;
+  }
+
+  .missionVision {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .leadershipGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .history,
+  .leadership,
+  .achievements,
+  .location {
+    padding: 25px;
+  }
+}

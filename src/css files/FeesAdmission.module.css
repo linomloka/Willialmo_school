@@ -1,0 +1,349 @@
+.feesSection {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  min-height: calc(100vh - 120px);
+}
+
+.feesHeader {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feesHeader h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.feesHeader p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.feesContent {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.programSection {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.programSection h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.feesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.feesTable th {
+  background: #3498db;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid #2980b9;
+}
+
+.feesTable td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.feesTable tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.feesTable tbody tr:hover {
+  background: #e8f4f8;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #e74c3c;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.additionalCosts {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.additionalCosts h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #27ae60;
+  padding-bottom: 10px;
+}
+
+.costsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.costCard {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-top: 4px solid #27ae60;
+  text-align: center;
+}
+
+.costCard h3 {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.costCard p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.costCard p:first-of-type {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #27ae60;
+}
+
+.description {
+  color: #666 !important;
+  font-size: 0.85rem !important;
+}
+
+.admissionProcess {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admissionProcess h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #e67e22;
+  padding-bottom: 10px;
+}
+
+.stepsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #e67e22;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  color: #2c3e50;
+  margin: 15px 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.step p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.requirements {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.requirements h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #9b59b6;
+  padding-bottom: 10px;
+}
+
+.requirementsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.requirementCard {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #9b59b6;
+}
+
+.requirementCard h3 {
+  color: #2c3e50;
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+}
+
+.requirementCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.requirementCard li {
+  padding: 8px 0;
+  color: #666;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.requirementCard li:last-child {
+  border-bottom: none;
+}
+
+.paymentMethods {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.paymentMethods h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #16a085;
+  padding-bottom: 10px;
+}
+
+.paymentMethods > p {
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.paymentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.paymentOption {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-top: 3px solid #16a085;
+  text-align: center;
+}
+
+.paymentOption h3 {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  font-size: 1.05rem;
+}
+
+.paymentOption p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.contactCTA {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contactCTA h2 {
+  margin: 0 0 15px 0;
+  font-size: 1.8rem;
+}
+
+.contactCTA p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contactInfo {
+  font-size: 1.05rem;
+  margin: 15px 0 !important;
+}
+
+@media (max-width: 768px) {
+  .feesHeader h1 {
+    font-size: 2rem;
+  }
+
+  .programSection,
+  .additionalCosts,
+  .admissionProcess,
+  .requirements,
+  .paymentMethods,
+  .contactCTA {
+    padding: 25px;
+  }
+
+  .feesTable {
+    font-size: 0.85rem;
+  }
+
+  .feesTable th,
+  .feesTable td {
+    padding: 10px;
+  }
+
+  .costsGrid,
+  .stepsContainer,
+  .requirementsGrid,
+  .paymentGrid {
+    grid-template-columns: 1fr;
+  }
+}
