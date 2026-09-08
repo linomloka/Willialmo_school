@@ -3,7 +3,7 @@ import styles from './css files/SignUp.module.css'
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-function SignUp({language, show, onClose}) {
+function SignUp({language}) {
 
     const [error, setError] = useState("");
     const [password, setPassword] = useState("");
@@ -40,64 +40,58 @@ function SignUp({language, show, onClose}) {
         e.preventDefault();  
 
         console.log(signFormData);
-        onClose();
     };
-
-    const handleClose = () => {
-    setSignFormData({
-        name: "",
-        email: "",
-        password: "",
-        confirmPassword: ""
-    });
-    setError("");
-    setPassword("");
-    onClose();
-    };
-
-
-    if (!show) return null;
 
     return(
-        <div className={styles.modalOverlay} onClick={onClose}>
-            <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-                <button className={styles.closeButton} onClick={onClose}>
-                    &times;
-                </button>
-
-                <div className={styles.signIn}>
+        <main className={styles.form_container}>
+                <div className={styles.auth_panel}>
+                    <aside className={styles.welcome_panel}>
+                        <span className={styles.eyebrow}>WILLIALMO SCHOOL</span>
+                        <div className={styles.panel_mark}>W</div>
+                        <h1>{language === "EN" ? "Make room to grow." : "Jipe nafasi ya kukua."}</h1>
+                        <p>{language === "EN" ? "Join a warm, ambitious school community where every learner is seen." : "Jiunge na jamii ya shule yenye moyo na malengo ambapo kila mwanafunzi anaonekana."}</p>
+                        <span className={styles.panel_note}>A BRIGHTER START</span>
+                    </aside>
                     <form onSubmit={ formSubmit } className={styles.signIn_form}>
-                        <h2>{language === "EN" ? "Sign Here" : "Jisajili hapa"}</h2>
-                        <input type="text" 
+                        <div className={styles.form_heading}>
+                            <span className={styles.form_kicker}>NEW FAMILY</span>
+                            <h2>{language === "EN" ? "Create your account" : "Fungua akaunti yako"}</h2>
+                            <p>{language === "EN" ? "A few details and you are ready to begin." : "Taarifa chache tu na uko tayari kuanza."}</p>
+                        </div>
+                        <label htmlFor="signup-name">{language === "EN" ? "Full name" : "Jina kamili"}</label>
+                        <input id="signup-name" type="text" 
                             name='name'
                             onChange={ handleForm }
                             value={ signFormData.name }
                             placeholder={language === "EN" ? "Enter your name" : "Andika jina lako"}
                             required 
                         />
-                        <input type="email" 
+                        <label htmlFor="signup-email">{language === "EN" ? "Email address" : "Barua pepe"}</label>
+                        <input id="signup-email" type="email" 
                             name='email'
                             onChange={ handleForm }
                             value={ signFormData.email }
                             placeholder={language === "EN" ? "Enter your email" : "Andika barua pepe yako"}
                             required
                         />
-                        <input type="password" 
+                        <label htmlFor="signup-password">{language === "EN" ? "Create a password" : "Unda nenosiri"}</label>
+                        <input id="signup-password" type="password" 
                             name='password'
                             onChange={ handleForm }
                             value={ signFormData.password }
                             placeholder={language === "EN" ? "Enter password" : "Andika nenosiri lako"}
                             required 
                         />
-                        { password && <p style={{color: "red"}}> {password} </p>}
-                        <input type="password" 
+                        { password && <p className={styles.error_message}> {password} </p>}
+                        <label htmlFor="signup-confirm-password">{language === "EN" ? "Confirm password" : "Thibitisha nenosiri"}</label>
+                        <input id="signup-confirm-password" type="password" 
                             name='confirmPassword'
                             onChange={ handleForm }
                             value={ signFormData.confirmPassword }
                             placeholder={language === "EN" ? 'Confirm your password' : 'Thibitisha nenosiri lako'}
                             required
                         />
-                        { error && <p style={{color: "red"}}> {error} </p>}
+                        { error && <p className={styles.error_message}> {error} </p>}
                         <div>
                             <button type='submit' 
                                     className={styles.signForm_buttons}
@@ -106,22 +100,18 @@ function SignUp({language, show, onClose}) {
                                                 !signFormData.password ||
                                                 signFormData.password.length < 7 ||
                                                 signFormData.password !== signFormData.confirmPassword }>
-                             <h2>{language === "EN" ? "Sign Up" : "Jisajili"}</h2>
+                             {language === "EN" ? "Create account" : "Fungua akaunti"}
                             </button> 
                         </div>
                         <p>{language === "EN" ? "Already have an account?" : "Je una akaunti?"} <Link to='/logIn'> {language === "EN" ? "Log In" : "Ingia"} </Link> </p>
                     </form>
                 </div>
-                
-            </div>
-        </div>
+        </main>
     );
 }
 
 SignUp.propTypes = {
-    language: PropTypes.string.isRequired,
-    show: PropTypes.bool.isRequired,
-    onClose: PropTypes.func.isRequired
+    language: PropTypes.string.isRequired
 };
 
 export default SignUp;

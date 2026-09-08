@@ -6,12 +6,12 @@ function FeesAdmission({ language }) {
     <section className={styles.feesSection}>
       <div className={styles.feesHeader}>
         <h1>
-          {language === "EN" ? "Fees & Admission" : "Ada na Kuingizwa"}
+          {language === "EN" ? "Fees & Admission" : "Ada na Usaili"}
         </h1>
         <p>
           {language === "EN"
             ? "Clear information about our fees structure and admission process."
-            : "Habari nyingi kuhusu muundo wetu wa ada na mchakato wa kuingizwa."}
+            : "Habari nyingi kuhusu muundo wetu wa ada na mchakato wa usaili."}
         </p>
       </div>
 
@@ -54,7 +54,7 @@ function FeesAdmission({ language }) {
           <p className={styles.note}>
             {language === "EN"
               ? "*4 terms per year. Registration is one-time on first admission."
-              : "*Muhula 4 kwa mwaka. Kujiandikisha ni mara moja katika kuingizwa kwa kwanza."}
+              : "*Mihula 4 kwa mwaka. Kujiandikisha ni mara moja katika kuingizwa kwa kwanza."}
           </p>
         </div>
 
@@ -102,7 +102,7 @@ function FeesAdmission({ language }) {
           <p className={styles.note}>
             {language === "EN"
               ? "*Class 7 fees include NECTA exam registration and preparation materials."
-              : "*Ada ya Darasa 7 inajumuisha kujiandikisha kwa NECTA na nyenzo za maandalizi."}
+              : "*Ada ya Darasa la 7 inajumuisha kujiandikisha kwa NECTA na nyenzo za maandalizi."}
           </p>
         </div>
 
@@ -114,7 +114,7 @@ function FeesAdmission({ language }) {
               <h3>{language === "EN" ? "School Uniform" : "Sare ya Shule"}</h3>
               <p>300,000 - 500,000 TZS</p>
               <p className={styles.description}>
-                {language === "EN" ? "Required for all students" : "Inatozamwa kwa wanafunzi wote"}
+                {language === "EN" ? "Required for all students" : "Inatozwa kwa wanafunzi wote"}
               </p>
             </div>
 
@@ -130,7 +130,7 @@ function FeesAdmission({ language }) {
               <h3>{language === "EN" ? "Sports Uniform" : "Sare ya Michezo"}</h3>
               <p>100,000 - 150,000 TZS</p>
               <p className={styles.description}>
-                {language === "EN" ? "For sports participation (optional)" : "Kwa ushiriki wa michezo (ikhtiyari)"}
+                {language === "EN" ? "For sports participation (optional)" : "Kwa ushiriki wa michezo (chaguo)"}
               </p>
             </div>
 
@@ -138,12 +138,12 @@ function FeesAdmission({ language }) {
               <h3>{language === "EN" ? "Lunch Program" : "Programu ya Chakula"}</h3>
               <p>50,000 TZS / month</p>
               <p className={styles.description}>
-                {language === "EN" ? "Nutritious meals provided daily (optional)" : "Chakula cha kujenga mwili kutolewa kila siku (ikhtiyari)"}
+                {language === "EN" ? "Nutritious meals provided daily (optional)" : "Chakula cha kujenga mwili kutolewa kila siku (chaguo)"}
               </p>
             </div>
 
             <div className={styles.costCard}>
-              <h3>{language === "EN" ? "Transport (Optional)" : "Usafiri (Ikhtiyari)"}</h3>
+              <h3>{language === "EN" ? "Transport (Optional)" : "Usafiri (Chaguo)"}</h3>
               <p>100,000 - 200,000 TZS / month</p>
               <p className={styles.description}>
                 {language === "EN" ? "School shuttle service available" : "Huduma ya shuttle ya shule inapatikana"}
@@ -162,15 +162,15 @@ function FeesAdmission({ language }) {
 
         {/* Admission Process */}
         <div className={styles.admissionProcess}>
-          <h2>{language === "EN" ? "Admission Process" : "Mchakato wa Kuingizwa"}</h2>
+          <h2>{language === "EN" ? "Admission Process" : "Mchakato wa Usaili"}</h2>
           <div className={styles.stepsContainer}>
             <div className={styles.step}>
               <div className={styles.stepNumber}>1</div>
-              <h3>{language === "EN" ? "Inquiry & School Tour" : "Maswali na Ziaramu ya Shule"}</h3>
+              <h3>{language === "EN" ? "Inquiry & School Tour" : "Maswali na Ziara ya Shule"}</h3>
               <p>
                 {language === "EN"
                   ? "Contact the school office to schedule a tour and ask questions about our programmes."
-                  : "Wasiliana na ofisi ya shule kuandaa ziaramu na kuuliza maswali kuhusu programu zetu."}
+                  : "Wasiliana na ofisi ya shule kuandaa ziara na kuuliza maswali kuhusu programu zetu."}
               </p>
             </div>
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
-function Navbar({language, setLanguage, setShowSignUp}) {
+function Navbar({language, setLanguage}) {
 
     const languageChanger = () => setLanguage(language === "EN" ? "SW" : "EN");
     const [showMenu, setShowMenu] = useState(false);
@@ -51,9 +51,11 @@ function Navbar({language, setLanguage, setShowSignUp}) {
                         </button>
                     </Link>
 
-                    <button type="button" className="signUp_button" onClick={() => setShowSignUp(true)}>
-                        {language === "EN" ? "Sign Up" : "Jiunge"}
-                    </button>
+                    <Link to="/signUp">
+                        <button type="button" className="signUp_button">
+                            {language === "EN" ? "Sign Up" : "Jiunge"}
+                        </button>
+                    </Link>
 
                     <button onClick={languageChanger} className="language_button">{language}</button>
                 </div>
@@ -64,8 +66,7 @@ function Navbar({language, setLanguage, setShowSignUp}) {
 
 Navbar.propTypes = {
     language: PropTypes.string.isRequired,
-    setLanguage: PropTypes.func.isRequired,
-    setShowSignUp: PropTypes.func.isRequired
+    setLanguage: PropTypes.func.isRequired
 };
 
 export default Navbar;

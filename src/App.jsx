@@ -30,20 +30,15 @@ Home.propTypes = {
 
 function App() {
   const[language, setLanguage] = useState("EN");
-  const [showSignUp, setShowSignUp] = useState(false);
 
   return (
     <ErrorBoundary>
       <BrowserRouter>
-        <Navbar language={language} setLanguage={setLanguage} setShowSignUp={setShowSignUp}/>
-        <SignUp 
-          language={language} 
-          show={showSignUp} 
-          onClose={() => setShowSignUp(false)} 
-        />
+        <Navbar language={language} setLanguage={setLanguage}/>
         <Routes>          
           <Route path='/' element={<Home language={language}/>} />
           <Route path='/logIn' element={<LogInPage language={language} />} />
+          <Route path='/signUp' element={<SignUp language={language} />} />
           <Route path='/about' element={<><About language={language}/><Footer /></>} />
           <Route path='/curriculum' element={<><Curriculum language={language}/><Footer /></>} />
           <Route path='/gallery' element={<><Gallery language={language}/><Footer /></>} />
